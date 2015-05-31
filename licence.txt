@@ -1,0 +1,6 @@
+// Copyright (c) Lukasz Pyrzyk
+// https://linkedin.com/in/lukaszpyrzyk
+// All Rights Reserved
+// Licensed under the MIT License
+
+http://opensource.org/licenses/MIT
