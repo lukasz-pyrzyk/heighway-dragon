@@ -1,5 +1,0 @@
-C:\Users\Łukasz\OneDrive\Studia\Semestr IV\Programowanie niskopoziomowe\Programy\Projekt 3\HeighwayDragon\bin\Debug\HeighwayDragon.dll
-C:\Users\Łukasz\OneDrive\Studia\Semestr IV\Programowanie niskopoziomowe\Programy\Projekt 3\HeighwayDragon\bin\Debug\HeighwayDragon.pdb
-C:\Users\Łukasz\OneDrive\Studia\Semestr IV\Programowanie niskopoziomowe\Programy\Projekt 3\HeighwayDragon\obj\Debug\HeighwayDragon.csprojResolveAssemblyReference.cache
-C:\Users\Łukasz\OneDrive\Studia\Semestr IV\Programowanie niskopoziomowe\Programy\Projekt 3\HeighwayDragon\obj\Debug\HeighwayDragon.dll
-C:\Users\Łukasz\OneDrive\Studia\Semestr IV\Programowanie niskopoziomowe\Programy\Projekt 3\HeighwayDragon\obj\Debug\HeighwayDragon.pdb
