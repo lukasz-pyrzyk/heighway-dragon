@@ -15,7 +15,7 @@ namespace HeighwayDragon.Factory
 			return new DragonCalculator();
 		}
 
-		public static IDragonCalculator NewsmCalculator()
+		public static IDragonCalculator NewAsmCalculator()
 		{
 			return new AsmDragonCalculator();
 		}
