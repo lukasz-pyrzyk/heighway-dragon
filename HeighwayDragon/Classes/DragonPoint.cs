@@ -15,8 +15,8 @@ namespace HeighwayDragon.Classes
 			Y = y;
 		}
 
-		public double X { get; }
-		public double Y { get; }
+		public double X { get; private set; }
+		public double Y { get; private set; }
 
 		public int CalculateXPosition(double minValueInPoints, double maxValueInPoints, int width)
 		{
