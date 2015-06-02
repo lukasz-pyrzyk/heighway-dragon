@@ -10,7 +10,7 @@ namespace HeighwayDragon.Factory
 {
     public class DragonCalculationFactory
     {
-        public static IDragonCalculator NewCalculator()
+        public static IDragonCalculator CSharpCalculator()
         {
             return new CSharpCalculator();
         }
