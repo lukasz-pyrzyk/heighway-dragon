@@ -8,16 +8,16 @@ using HeighwayDragon.Calculations.ServiceLayer;
 
 namespace HeighwayDragon.Factory
 {
-	public class DragonCalculationFactory
-	{
-		public static IDragonCalculator NewCalculator()
-		{
-			return new DragonCalculator();
-		}
+    public class DragonCalculationFactory
+    {
+        public static IDragonCalculator NewCalculator()
+        {
+            return new CSharpCalculator();
+        }
 
-		public static IDragonCalculator NewAsmCalculator()
-		{
-			return new AsmDragonCalculator();
-		}
-	}
+        public static IDragonCalculator NewAsmCalculator()
+        {
+            return new AssemblerCalculator();
+        }
+    }
 }

@@ -51,8 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculations\DomainLayer\ASMDragonCalculator.cs" />
+    <Compile Include="Calculations\DomainLayer\AssemblerCalculator.cs" />
     <Compile Include="Calculations\DomainLayer\DragonCalculator.cs" />
+    <Compile Include="Calculations\DomainLayer\CSharpCalculator.cs" />
     <Compile Include="Calculations\ServiceLayer\IDragonCalculator.cs" />
     <Compile Include="Classes\Dragon.cs" />
     <Compile Include="Classes\DragonPoint.cs" />
