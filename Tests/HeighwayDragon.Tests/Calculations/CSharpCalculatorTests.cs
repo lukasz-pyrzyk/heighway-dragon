@@ -1,5 +1,4 @@
-﻿using HeighwayDragon.Calculations.DomainLayer;
-using HeighwayDragon.Calculations.ServiceLayer;
+﻿using HeighwayDragon.Calculations;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
 

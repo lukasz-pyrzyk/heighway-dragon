@@ -10,10 +10,9 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Windows;
+using HeighwayDragon.Calculations;
 using Microsoft.Win32;
-using HeighwayDragon.Calculations.ServiceLayer;
 using HeighwayDragon.Classes;
-using HeighwayDragon.Factory;
 using HeighwayDragon.UI.WPF.Convertions;
 
 namespace HeighwayDragon.UI.WPF
@@ -66,7 +65,7 @@ namespace HeighwayDragon.UI.WPF
         private void InitializeDragonObjects(int iterations)
         {
             Dragon = new Dragon(iterations);
-            Calc = DragonCalculationFactory.NewAsmCalculator();
+            Calc = new CSharpCalculator();
         }
 
         private void SaveToFile_Click(object sender, RoutedEventArgs e)
