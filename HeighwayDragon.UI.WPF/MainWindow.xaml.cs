@@ -21,7 +21,7 @@ namespace HeighwayDragon.UI.WPF
     {
         public Dragon Dragon { get; set; }
         public Bitmap Bmp { get; set; }
-        private IDragonCalculator Calc;
+        private DragonCalculator Calc;
 
         private float x = 0;
         private float y = 0;

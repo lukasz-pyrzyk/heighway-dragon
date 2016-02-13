@@ -2,7 +2,7 @@
 
 namespace HeighwayDragon.Calculations
 {
-    public abstract class DragonCalculator : IDragonCalculator
+    public abstract class DragonCalculator
     {
         private readonly Random _random = new Random();
         
