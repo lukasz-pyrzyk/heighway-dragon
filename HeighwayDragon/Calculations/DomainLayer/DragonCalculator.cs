@@ -2,7 +2,7 @@
 
 namespace HeighwayDragon.Calculations.DomainLayer
 {
-    internal class DragonCalculator
+    public class DragonCalculator
     {
         private readonly Random random;
 

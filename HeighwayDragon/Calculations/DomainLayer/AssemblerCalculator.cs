@@ -8,7 +8,7 @@ using HeighwayDragon.Calculations.ServiceLayer;
 
 namespace HeighwayDragon.Calculations.DomainLayer
 {
-    internal class AssemblerCalculator : DragonCalculator, IDragonCalculator
+    public class AssemblerCalculator : DragonCalculator, IDragonCalculator
     {
         private const string DLLPath = @"ASM\HeighwayDragonCalc.DLL";
 
