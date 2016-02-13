@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="Calculations\DragonCalculator.cs" />
     <Compile Include="Calculations\CSharpCalculator.cs" />
-    <Compile Include="Calculations\IDragonCalculator.cs" />
     <Compile Include="Classes\Dragon.cs" />
     <Compile Include="Classes\DragonPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

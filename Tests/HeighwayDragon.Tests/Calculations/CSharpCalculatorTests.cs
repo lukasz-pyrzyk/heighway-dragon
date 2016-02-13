@@ -13,7 +13,7 @@ namespace HeighwayDragon.Tests.Calculations
         [Test]
         public void CalculateX1_ReturnsCorrectValue()
         {
-            IDragonCalculator calculator = new CSharpCalculator();
+            DragonCalculator calculator = new CSharpCalculator();
 
             float x = _fixture.Create<float>();
             float y = _fixture.Create<float>();
@@ -28,7 +28,7 @@ namespace HeighwayDragon.Tests.Calculations
         [Test]
         public void CalculateY1_ReturnsCorrectValue()
         {
-            IDragonCalculator calculator = new CSharpCalculator();
+            DragonCalculator calculator = new CSharpCalculator();
 
             float x = _fixture.Create<float>();
             float y = _fixture.Create<float>();
@@ -43,7 +43,7 @@ namespace HeighwayDragon.Tests.Calculations
         [Test]
         public void CalculateX2_ReturnsCorrectValue()
         {
-            IDragonCalculator calculator = new CSharpCalculator();
+            DragonCalculator calculator = new CSharpCalculator();
 
             float x = _fixture.Create<float>();
             float y = _fixture.Create<float>();
@@ -59,7 +59,7 @@ namespace HeighwayDragon.Tests.Calculations
         [Test]
         public void CalculateY2_ReturnsCorrectValue()
         {
-            IDragonCalculator calculator = new CSharpCalculator();
+            DragonCalculator calculator = new CSharpCalculator();
 
             float x = _fixture.Create<float>();
             float y = _fixture.Create<float>();
