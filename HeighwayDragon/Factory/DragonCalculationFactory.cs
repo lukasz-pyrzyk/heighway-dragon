@@ -1,10 +1,4 @@
-﻿// Copyright (c) Lukasz Pyrzyk
-// https://linkedin.com/in/lukaszpyrzyk
-// All Rights Reserved
-// Licensed under the MIT License
-
-using HeighwayDragon.Calculations.DomainLayer;
-using HeighwayDragon.Calculations.ServiceLayer;
+﻿using HeighwayDragon.Calculations;
 
 namespace HeighwayDragon.Factory
 {

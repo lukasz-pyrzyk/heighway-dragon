@@ -1,14 +1,8 @@
-﻿// Copyright (c) Lukasz Pyrzyk
-// https://linkedin.com/in/lukaszpyrzyk
-// All Rights Reserved
-// Licensed under the MIT License
+﻿using System.Runtime.InteropServices;
 
-using System.Runtime.InteropServices;
-using HeighwayDragon.Calculations.ServiceLayer;
-
-namespace HeighwayDragon.Calculations.DomainLayer
+namespace HeighwayDragon.Calculations
 {
-    public class AssemblerCalculator : DragonCalculator, IDragonCalculator
+    public class AssemblerCalculator : DragonCalculator
     {
         private const string DLLPath = @"ASM\HeighwayDragonCalc.DLL";
 
@@ -28,7 +22,7 @@ namespace HeighwayDragon.Calculations.DomainLayer
         /// First transformation for x property
         /// x' = -0.4 * x - 1
         /// </summary>
-        public float CalculateX1(float x, float y)
+        public override float CalculateX1(float x, float y)
         {
             float xMultiplier = -0.4F;
             float c = 1;
@@ -41,7 +35,7 @@ namespace HeighwayDragon.Calculations.DomainLayer
         /// First transformation for y property
         /// y' = -0.4 * y + 0.1
         /// </summary>
-        public float CalculateY1(float x, float y)
+        public override float CalculateY1(float x, float y)
         {
             float xMultiplier = -0.4F;
             float c = 0.1F;
@@ -54,7 +48,7 @@ namespace HeighwayDragon.Calculations.DomainLayer
         /// Second transformation for x property
         /// x' = 0.76 * x - 0.4 * y
         /// </summary>
-        public float CalculateX2(float x, float y)
+        public override float CalculateX2(float x, float y)
         {
             float xMultiplier = 0.76F;
             float yMultiplier = 0.4F;
@@ -67,7 +61,7 @@ namespace HeighwayDragon.Calculations.DomainLayer
         /// Second transformation for y property
         /// y' = 0.4 * x + 0.76 * y
         /// </summary>
-        public float CalculateY2(float x, float y)
+        public override float CalculateY2(float x, float y)
         {
             float xMultiplier = 0.4F;
             float yMultiplier = 0.76F;

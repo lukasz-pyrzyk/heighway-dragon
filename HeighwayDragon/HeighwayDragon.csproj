@@ -51,23 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculations\DomainLayer\AssemblerCalculator.cs" />
-    <Compile Include="Calculations\DomainLayer\DragonCalculator.cs" />
-    <Compile Include="Calculations\DomainLayer\CSharpCalculator.cs" />
-    <Compile Include="Calculations\ServiceLayer\IDragonCalculator.cs" />
+    <Compile Include="Calculations\AssemblerCalculator.cs" />
+    <Compile Include="Calculations\DragonCalculator.cs" />
+    <Compile Include="Calculations\CSharpCalculator.cs" />
+    <Compile Include="Calculations\IDragonCalculator.cs" />
     <Compile Include="Classes\Dragon.cs" />
     <Compile Include="Classes\DragonPoint.cs" />
     <Compile Include="Factory\DragonCalculationFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="ASM\HeighwayDragonCalc.ASM" />
-    <Content Include="ASM\HeighwayDragonCalc.DLL">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ASM\win32a.inc" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
