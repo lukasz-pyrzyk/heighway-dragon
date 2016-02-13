@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeighwayDragon", "HeighwayDragon\HeighwayDragon.csproj", "{F0DC8363-844A-4BD7-B259-C9D9124225DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeighwayDragon.UI.WPF", "HeighwayDragon.UI.WPF\HeighwayDragon.UI.WPF.csproj", "{6EEEB201-1F72-47C5-8A0F-94912CD87371}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5EDB57FF-B399-4154-8177-BF87751489BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeighwayDragon.Tests", "Tests\HeighwayDragon.Tests\HeighwayDragon.Tests.csproj", "{EE006E29-BA07-44DA-9F35-DE2465B22414}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +25,15 @@ Global
 		{6EEEB201-1F72-47C5-8A0F-94912CD87371}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEEB201-1F72-47C5-8A0F-94912CD87371}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEEB201-1F72-47C5-8A0F-94912CD87371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE006E29-BA07-44DA-9F35-DE2465B22414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE006E29-BA07-44DA-9F35-DE2465B22414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE006E29-BA07-44DA-9F35-DE2465B22414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE006E29-BA07-44DA-9F35-DE2465B22414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE006E29-BA07-44DA-9F35-DE2465B22414} = {5EDB57FF-B399-4154-8177-BF87751489BB}
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,7 @@ using HeighwayDragon.Calculations.ServiceLayer;
 
 namespace HeighwayDragon.Calculations.DomainLayer
 {
-	internal class CSharpCalculator : DragonCalculator, IDragonCalculator
+	public class CSharpCalculator : DragonCalculator, IDragonCalculator
 	{
 		/// <summary>
 		/// First transformation for x property
