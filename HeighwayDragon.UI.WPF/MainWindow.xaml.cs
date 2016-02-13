@@ -1,18 +1,12 @@
-﻿// Copyright (c) Lukasz Pyrzyk
-// https://linkedin.com/in/lukaszpyrzyk
-// All Rights Reserved
-// Licensed under the MIT License
-
-
-using System;
+﻿using System;
 using System.Configuration;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Windows;
 using HeighwayDragon.Calculations;
+using HeighwayDragon.Models;
 using Microsoft.Win32;
-using HeighwayDragon.Classes;
 using HeighwayDragon.UI.WPF.Convertions;
 
 namespace HeighwayDragon.UI.WPF
@@ -21,10 +15,10 @@ namespace HeighwayDragon.UI.WPF
     {
         public Dragon Dragon { get; set; }
         public Bitmap Bmp { get; set; }
-        private DragonCalculator Calc;
+        private DragonCalculator _calc;
 
-        private float x = 0;
-        private float y = 0;
+        private float x;
+        private float y;
 
         public MainWindow()
         {
@@ -40,18 +34,19 @@ namespace HeighwayDragon.UI.WPF
         {
             for (int i = 0; i < iterations; i++)
             {
-                bool firstTransformation = Calc.ChooseTransformation();
+                bool firstTransformation = _calc.ChooseTransformation();
 
                 if (firstTransformation)
                 {
-                    x = Calc.CalculateX1(x, y);
-                    y = Calc.CalculateY1(x, y);
+                    x = _calc.CalculateX1(x, y);
+                    y = _calc.CalculateY1(x, y);
                 }
                 else
                 {
-                    x = Calc.CalculateX2(x, y);
-                    y = Calc.CalculateY2(x, y);
+                    x = _calc.CalculateX2(x, y);
+                    y = _calc.CalculateY2(x, y);
                 }
+
                 Dragon.Points.Add(new DragonPoint(x, y));
             }
         }
@@ -65,7 +60,7 @@ namespace HeighwayDragon.UI.WPF
         private void InitializeDragonObjects(int iterations)
         {
             Dragon = new Dragon(iterations);
-            Calc = new CSharpCalculator();
+            _calc = new DragonCalculator();
         }
 
         private void SaveToFile_Click(object sender, RoutedEventArgs e)
@@ -76,7 +71,8 @@ namespace HeighwayDragon.UI.WPF
                 Title = "Save an Image File"
             };
             dialog.ShowDialog();
-            if (!String.IsNullOrEmpty(dialog.FileName))
+
+            if (!string.IsNullOrEmpty(dialog.FileName))
             {
                 using (FileStream fs = (FileStream)dialog.OpenFile())
                 {
