@@ -52,9 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculations\DragonCalculator.cs" />
-    <Compile Include="Calculations\CSharpCalculator.cs" />
-    <Compile Include="Classes\Dragon.cs" />
-    <Compile Include="Classes\DragonPoint.cs" />
+    <Compile Include="Models\Dragon.cs" />
+    <Compile Include="Models\DragonPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Linq;
 
-namespace HeighwayDragon.Classes
+namespace HeighwayDragon.Models
 {
     public class Dragon
     {
